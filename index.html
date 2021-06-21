@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Html structure  -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts Importing  -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;600&family=Staatliches&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Title  -->
+    <title>Spotify Best</title>
+
+</head>
+
+  <!-- Body section starts here  -->
+
+
+<body>
+
+    <!-- creating main container  -->
+    <div class="container">
+
+        <!-- Creating a div containing all the main content  -->
+
+        <div class="main_box">
+
+            <!-- Head part of the project  -->
+
+            <div class="heading">
+            <img src="Images/Spotify.png" id="logo">
+            <span>Originals</span>
+            </div>
+
+            <!-- Side Heading of the project  -->
+
+            <div class="para">
+                <h3>Spotify's Top three Artists in this Weekend</h3>
+            </div>
+
+            <!-- Creating the card section starts here  -->
+
+            <div class="card_box">
+                <!-- Maing three cards of same properties -->
+
+                <!-- card number 1 -->
+
+                <div class="card1">
+                    <img src="Images/xxxtentecion.jpg" alt="">
+                    <h2>XXXTENTACION</h2>
+                    <div class="play">
+                        <h4> Popular song  </h4>
+                        <img id="icon" src="Images/pauseviolet.png" alt="">
+                    </div>
+                    <audio id="song1">
+                        <source src="Music/lookatme.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+
+                <!-- card number 2 -->
+
+                <div class="card2">
+                    <img src="Images/juicew.jpg" alt="">
+                    <h2>JUICE WRLD</h2>
+                    <div class="play">
+                        <h4> Popular song  </h4>
+                        <img id="icon2" src="Images/pausegreen.png" >
+                    </div>
+                    <audio id="song2">
+                        <source src="Music/wishingwell.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+
+                <!-- card number 3 -->
+
+                <div class="card3">
+                    <img  src="Images/weeknd.jpg" alt="">
+                    <h2>THE WEEKND</h2>
+                    <div class="play">
+                        <h4> Popular song  </h4>
+                        <img id="icon3" src="Images/pausered.png" >
+                    </div>
+                    <audio id="song3">
+                        <source src="Music/thehills.mp3"  type="audio/mp3">
+                    </audio>
+                </div>
+
+
+            
+            </div>
+            <!-- cards div completed -->
+        </div>
+        <!-- Main box div completed -->
+
+    </div>
+
+
+
+
+<!-- java script starts here  -->
+
+
+    <script>
+
+        // script for card 1 
+
+
+       var song1 = document.getElementById("song1");
+       var icon = document.getElementById("icon");
+
+       icon.onclick = function(){
+          
+        if(song1.paused){
+            song1.play();
+            icon.src = "Images/pauseviolet.png"
+        }else{
+            song1.pause();
+            icon.src = "Images/playviolet.png"
+        }
+       }
+
+
+        // script for card I
+
+
+       var song2 = document.getElementById("song2");
+       var icon2 = document.getElementById("icon2");
+
+       icon2.onclick = function(){
+          
+        if(song2.paused){
+            song2.play();
+            icon2.src = "Images/pausegreen.png"
+        }else{
+
+            song2.pause();
+            icon2.src = "Images/playgreen.png"
+        }
+       }
+
+
+        // script for card 3 
+
+
+
+       var song3 = document.getElementById("song3");
+       var icon3 = document.getElementById("icon3");
+
+       icon3.onclick = function(){
+          
+        if(song3.paused){
+            song3.play();
+            icon3.src = "Images/pausered.png"
+        }else{
+
+            song3.pause();
+            icon3.src = "Images/playred.png"
+        }
+       }
+
+    </script>
+
+
+</body>
+</html>

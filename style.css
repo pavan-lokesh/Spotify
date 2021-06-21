@@ -1,0 +1,277 @@
+/*      font-family: 'Oswald', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Staatliches', cursive;
+        font-family: 'Ubuntu', sans-serif;        */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* -------------------------------------- CSS FOR HEAD PART -------------------------- */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(Images/background.jpg)   ;
+    background-size: cover;
+    background-position: center;
+}
+   
+
+.main_box{
+    width: 50%;
+    height: 50%;
+    /* border: 2px solid white; */
+}
+#logo{
+    width: 300px;
+    opacity: 0.8;
+
+}
+.heading{
+    display: flex;
+    justify-content: center;
+
+}
+span{
+    font-size: 60px;
+    color: rgb(153, 153, 153);
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Lobster', cursive;
+
+    opacity: 0.5;
+    font-weight: 100;
+   margin-top: 17px;
+   margin-left: 6px;
+}
+.para{
+    justify-content: center;
+    text-align: center;
+}
+.para h3{
+    margin-top: 10px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1px;
+    color: rgb(29, 140, 42);
+    font-weight: 300;
+    position: relative;
+    margin-top: 17px;
+    z-index: 1;
+    
+}
+.para h3::after{
+    content: "";
+    background: rgb(167, 164, 164);
+    height: 3px;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    transform: translateY(-30px);
+    
+   
+}
+
+
+/* -------------------------------------- CSS FOR CARDS STARTS HERE --------------------- */
+
+
+
+.card_box{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-top: 30px;
+}
+.card1{
+    height: 75%;
+    flex-basis: 33.33%;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,rgb(52, 4, 92),rgb(44, 43, 43));
+    align-items: center;
+    transition: all 1s ease;
+    
+}
+.card2{
+    height: 75%;
+    flex-basis: 33.33%;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,rgb(2, 83, 20),rgb(44, 43, 43));
+    transition: all 1s ease;
+}
+.card3{
+    height: 75%;
+    flex-basis: 33.33%;   
+    margin: 0 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,rgb(92, 4, 4),rgb(44, 43, 43));
+    transition: all 1s ease;
+}
+
+
+/* ========== Hover effects for cards ============ */
+
+
+    .card1:hover{
+        background: linear-gradient(45deg,rgb(17, 17, 17),rgb(44, 43, 43));
+
+    }
+    .card2:hover{
+        background: linear-gradient(45deg,rgb(17, 17, 17),rgb(44, 43, 43));
+
+    }
+    .card3:hover{
+        background: linear-gradient(45deg,rgb(17, 17, 17),rgb(44, 43, 43));
+
+    }
+
+/* ============ CSS For images in cards ========= */
+
+ 
+.card1 img{
+    width: 150px;
+    margin-left: 36px;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: none;
+    transition:all  1s ease;
+}
+.card2 img{
+    width: 160px;
+    margin-left: 36px;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: none;
+    transition:all  1s ease;
+}
+.card3 img{
+    width: 140px;
+    margin-left: 36px;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: none;
+    transition:all  1s ease;
+    
+} 
+
+
+/* ========== Hover Effects  for images ======= */
+
+.card1:hover img{
+    display: inline-block;
+}
+.card2:hover img{
+    display: inline-block;
+}
+.card3:hover img{
+    display: inline-block;
+}
+
+
+/* ------------------ CSS FOR CARD HEADINGS ----------- */
+
+
+.card1 h2{
+    margin-top: 50%;
+    margin-left: 39px;
+    color: rgb(114, 110, 110);
+    transition: all 0.3s ease;
+    position: relative;
+
+}
+
+.card2 h2{
+    margin-top: 50%;
+    margin-left: 50px;
+    color: rgb(114, 110, 110);
+    transition: all 0.3s ease;
+    
+}
+
+.card3 h2{
+    margin-top: 50%;
+    margin-left: 49px;
+    color: rgb(114, 110, 110);
+    transition: all 0.3s ease;
+    
+}
+
+
+/* ========= Hover Effects for headings in cards ===== */
+
+.card1:hover h2{
+   transform: translateY(-100px);
+   font-size: 17px;
+   padding-left: 20px;
+   color: rgb(213, 2, 255);
+   
+    
+}
+.card2:hover h2{
+    transform: translateY(-100px);
+    font-size: 17px;
+    padding-left: 25px;
+    color: rgb(72, 255, 0);
+    
+}
+.card3:hover h2{
+    transform: translateY(-100px);
+   font-size: 17px;
+   padding-left: 20px;
+   color: rgb(255, 0, 0);
+    
+}
+
+
+
+/* ------------------- CSS FOR PLAY SECTION ------------------ */
+
+
+.play{
+    display: flex;
+    transform: translateY(-90px);
+    justify-content: space-around;
+}
+.play img{
+    width:50px;
+    cursor: pointer;
+   position: relative;
+   transform: translateX(-30px);
+}
+.card_box .play h4{
+   opacity: 0;
+}
+
+
+/* =========== Hover Effects for play section ============ */
+
+.card1:hover  .play h4{
+    opacity: 100%;
+    margin-top: 15px;
+    padding-left: 26px;
+    font-size: 17px;
+    color:rgb(102, 101, 101);
+}
+.card2:hover  .play h4{
+    opacity: 100%;
+    margin-top: 15px;
+    padding-left: 26px;
+    font-size: 17px;
+    color:rgb(102, 101, 101);
+}
+.card3:hover  .play h4{
+    opacity: 100%;
+    margin-top: 15px;
+    padding-left: 26px;
+    font-size: 17px;
+    color:rgb(102, 101, 101);
+}
